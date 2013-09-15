@@ -2,159 +2,29 @@
 <html>
 <head>
 <title>Associative Array for TOEIC</title>
-<style>
-body{
-height:100%;
-width:100%;
-min-height:500px;
-margin:0;
-overflow-y:auto;
-position:absolute;
-background:#fff;
-font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "MS PGothic", "MS UI Gothic", Helvetica, Arial, sans-serif;
-font-size:small;
-}
-#head {
-height: 22px;
-background: rgba(255, 255, 255, 0.6);
-width: 100%;
-font-size: 0.69em;
-line-height: 2.2;
-}
-
-#right{
-float: right;
-}
-
-*:after, *::before {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
-
-#top {
-text-decoration: none;
-padding: 0 1em;
-letter-spacing: 0.1em;
-color: #888;
-display: inline-block;
-cursor:pointer;
-}
-
-#header{
-margin: 0 auto;
-padding: 2em;
-text-align: center;
-color: #89867e;
-min-height: 200px;
-background: rgba(0,0,0,0.05);
-}
-
-#header h1, section h1 {
-font-size: 2.625em;
-line-height: 93px;
-margin: 0;
-font-weight: 300;
-}
-#header span{
-display: block;
-font-size: 60%;
-color: #ceccc6;
-padding: 0 0 0.6em 0.1em;
-line-height: 1px;
-}
-section span {
-display: block;
-font-size: 60%;
-opacity: 0.35;
-line-height: 0px;
-margin-top: -10px;
-}
-#header p{
-line-height: 61px;
-font-size: 15px;
-}
-
-section {
-margin: 0 auto;
-padding-bottom: 42px;
-text-align: center;
-color: white;
-}
-
-#color1 {
-background: #435a6b;
-}
-
-#color2{
-background: #0e83cd;
-}
-
-#content {
-width: 950px;
-margin-left: auto;
-margin-right: auto;
-text-align: left;
-margin-top: 47px;
-}
-
-#content h2 {
-font-weight: normal;
-font-size: 23px;
-margin-top: 24px;
-}
-
-#content h2 span {
-float: right;
-opacity: inherit;
-line-height: inherit;
-}
-
-
-
-.btn {
-background: none;
-cursor: pointer;
-display: inline-block;
-text-transform: uppercase;
-outline: none;
-position: relative;
--webkit-transition: all 0.3s;
--moz-transition: all 0.3s;
-transition: all 0.3s;
-padding: 7px 14px 4px 14px;
-font-size: 14px !important;
-margin-top: -3px !important;
-}
-
-.btn1 {
-border: 3px solid #fff !important;
-color: #fff !important;
-}
-
-.btn2 {
-border: 3px solid #fff !important;
-color: #fff !important;
-}
-
-.btn3 {
-border: 3px solid #fff !important;
-color: #fff !important;
-}
-
-.arrow{
-position: absolute;
-font-weight: normal;
-font-size: 23px;
-}
-
-</style>
+<link rel='stylesheet' href='./styles/main.css'>
 <script src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js"></script>
 <script>
 $(function(){
 
-  $('#top').click(function(){
-    location.href = 'http://www.koheishingai.com';
+ $('#top').click(function(){
+   window.open(
+     'http://www.koheishingai.com',
+     '_blank'
+   );
+ });
+ $('#wkc').click(function(){
+    window.open(
+     'http://www.koheishingai.com',
+     '_blank'
+    );
+ });
+
+ var socket = io.connect(':3001');
+  socket.on('example', function (data) {
+     //console.log(data);
+    //socket.emit('on', 'test');
   });
 
 });
@@ -179,6 +49,23 @@ $(function(){
 </div>
 </section>
 <section id='color2'>
+<h1>Start Studying TOEIC<span>TOEICの勉強を始める</span></h1>
+<div id='content'>
+<h2 class='teno'>No. 001</h2>
+<h2>The sales manager suggested that more support staff ________ hired.<span class="btn1 btn submits nons">回答をする</span></h2>
+</div>
+</section>
+<section id='color3'>
+<h1>Join the Development Team<span>開発チームに参加する</span></h1>
+</section>
+<section id='color4'>
+<h1>What’s All This?<span>一体これは何？</span></h1>
+</section>
+<section id='footer' class='color5'>
+<div id="content">
+<h2 class='center footh2'>If you enjoyed this page you might also like:</h2>
+<h2 class='center linkh2' id='wkc'>www.koheishingai.com</h2>
+</div>
 </section>
 </body>
 </html>
