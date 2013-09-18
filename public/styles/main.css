@@ -164,6 +164,11 @@ margin-bottom: -13px;
 font-size: 21px !important;
 }
 
+.teno2{
+margin-bottom: -13px;
+font-size: 18px !important;
+}
+
 .submits{
 padding: 7px 28px 4px 28px;
 margin-top: -6px !important;
@@ -206,4 +211,9 @@ color: rgba(0,0,0,0.35);
 #footer{
 padding-top: 139px;
 padding-bottom: 207px;
+}
+
+#hr {
+border-top: 3px dashed rgba(255, 20, 0, 0.25);
+margin-top: 39px;
 }
