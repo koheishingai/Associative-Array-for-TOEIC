@@ -169,6 +169,12 @@ margin-bottom: -13px;
 font-size: 18px !important;
 }
 
+.tenob{
+margin-bottom: -13px;
+font-weight: 900 !important;
+font-size: 21px !important;
+}
+
 .submits{
 padding: 7px 28px 4px 28px;
 margin-top: -6px !important;
@@ -178,11 +184,21 @@ margin-top: -6px !important;
 color: #0e83cd !important;
 }
 
+.submits2:hover, .submits2:active {
+color: #f19f0f !important;
+}
+
 .nons{
 opacity: 0.15 !important;
 cursor:default;
 }
 
+
+.nons2 {
+cursor: default;
+margin-top: -25px !important;
+cursor:pointer;
+}
 
 .nons:hover, .nones:active {
 color: #fff !important;
