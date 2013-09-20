@@ -233,3 +233,144 @@ padding-bottom: 207px;
 border-top: 3px dashed rgba(255, 20, 0, 0.25);
 margin-top: 39px;
 }
+
+#wkc{
+font-weight: normal;
+font-size: 23px;
+margin-top: 24px;
+width: 254px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#login {
+position: absolute;
+top: 0;
+left: 4px;
+margin: 27px 0 0 0;
+}
+
+.hbtn {
+position: relative;
+white-space: nowrap;
+outline: 0;
+text-decoration: none;
+cursor: pointer;
+overflow: hidden;
+text-overflow: ellipsis;
+height: 20px;
+padding: 0 5px;
+line-height: 18px;
+-webkit-font-smoothing: antialiased;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition-property: padding;
+-moz-transition-property: padding;
+-ms-transition-property: padding;
+-o-transition-property: padding;
+transition-property: padding;
+-webkit-transition-duration: .1s;
+-moz-transition-duration: .1s;
+-ms-transition-duration: .1s;
+-o-transition-duration: .1s;
+transition-duration: .1s;
+-webkit-transition-timing-function: ease;
+-moz-transition-timing-function: ease;
+-ms-transition-timing-function: ease;
+-o-transition-timing-function: ease;
+transition-timing-function: ease;
+}
+
+.hbtn {
+margin: 0 4px 0 0;
+}
+
+.hbtn {
+margin-bottom: 5px;
+color: #fff;
+border: 1px solid rgba(0,0,0,0.18);
+background: #3e3e3e;
+background: rgba(0,0,0,0.38);
+text-shadow: 1px 1px 0 rgba(0,0,0,0.08);
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+
+.hbtn {
+padding-left: 20px;
+}
+
+
+.hbtn {
+float: left;
+color: #FFF;
+border: 1px solid rgba(0, 0, 0, 0);
+background: rgba(163, 163, 163, 0.81);
+text-shadow: 1px 1px 0 rgba(0,0,0,0.08);
+}
+
+#sup:before {
+background-size: 12px;
+display: block;
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+width: 20px;
+border-radius: inherit;
+background: url(../images/power.png)4px 2px no-repeat;
+background-size: 12px;
+}
+
+#sup:after {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+content: '';
+-webkit-border-radius: inherit;
+-moz-border-radius: inherit;
+border-radius: inherit;
+}
+
+#lin:before {
+background-size: 12px;
+display: block;
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+width: 20px;
+border-radius: inherit;
+background: url(../images/lock.png)5px 2px no-repeat;
+background-size: 10px;
+}
+
+#lin:after {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+content: '';
+-webkit-border-radius: inherit;
+-moz-border-radius: inherit;
+border-radius: inherit;
+}
+
+
+
+
+
+
